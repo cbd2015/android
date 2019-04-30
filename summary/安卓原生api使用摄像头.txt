@@ -1,0 +1,87 @@
+-------------------------------------------------
+# @Time     : 2018-12-27 17:16			#
+# @USER     : chenbd				#
+# @Site     : midea#2L4				#
+# @File     : readLableText			#
+# @Software : Java/python/C++	 		#
+# @license  : Copyright(C), Midea Company	#
+# @Author   : chenbd				#
+# @Email    : 543447223@qq.com			#
+# @Version  : V0.1				#
+# @Tag	    ：安卓源生API函数调用手机摄像头	#
+------------------------------------------------- 
+
+
+【一】Activity活动之间的数据传输
+	// 创建Intent意图实例对象
+	Intent intent = new Intent(this,RecActivity.class);
+        // 往intent意图中设置参数
+        intent.putExtra("tag", tag);
+        intent.putExtra("sn", sn);
+	// 启动活动，传递意图
+        startActivity(intent);
+
+【二】
+	bmp = BitmapFactory.decodeStream(cr.openInputStream(uri));
+
+	// 缩放图片
+	WindowManager wm = getWindowManager();
+	int width = wm.getDefaultDisplay().getWidth();
+	int height = wm.getDefaultDisplay().getHeight();
+	// 图片的宽高
+	int photo_width = bmp.getWidth();
+	int photo_height = bmp.getHeight();
+	// 缩放比例，如小于1就设置为1
+	int bili = (photo_width/width)>(photo_height/height)?(photo_width/width):(photo_height/height);
+	bili = bili>1?bili:1;
+	System.out.println("bili:"+bili);
+	Matrix matrix = new Matrix(); 
+	matrix.postScale(1/bili,1/bili); //长和宽放大缩小的比例
+	Bitmap resizeBmp = Bitmap.createBitmap(bmp,0,0,bmp.getWidth(),bmp.getHeight(),matrix,true);
+
+	System.out.println(resizeBmp.getWidth()+":"+resizeBmp.getHeight());
+
+	img1.setImageBitmap(resizeBmp);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

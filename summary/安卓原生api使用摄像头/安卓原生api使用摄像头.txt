@@ -1,0 +1,60 @@
+-------------------------------------------------
+# @Time     : 2018-12-27 17:16			#
+# @USER     : chenbd				#
+# @Site     : midea#2L4				#
+# @File     : readLableText			#
+# @Software : Java/python/C++	 		#
+# @license  : Copyright(C), Midea Company	#
+# @Author   : chenbd				#
+# @Email    : 543447223@qq.com			#
+# @Version  : V0.1				#
+# @Tag	    ：安卓源生API函数调用手机摄像头	#
+------------------------------------------------- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

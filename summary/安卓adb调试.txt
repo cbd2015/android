@@ -1,0 +1,8 @@
+1. 打断点（大红色点）
+
+2. Run——>Attach Debugger to Android Process-->进入单步调试步骤方法
+
+
+
+3. adb命令方式进行apk安装
+	adb install app-debug.apk 
